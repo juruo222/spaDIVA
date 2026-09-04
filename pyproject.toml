@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spaDIVA"
+version = "0.1.0"
+description = "Graph-based generative framework for spatial multi-omics integration"
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = [
+    "spatial multi-omics",
+    "single-cell",
+    "graph neural network",
+    "variational autoencoder",
+]
+
+[tool.setuptools]
+packages = ["spaDIVA"]
