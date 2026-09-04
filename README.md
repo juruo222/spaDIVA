@@ -31,7 +31,7 @@ The [environment file](environment.yml) targets Linux and Windows on x86_64 and 
 - [P22 ATAC-RNA](tutorials/tutorial_P22_ATAC_RNA.ipynb) and [lymph node RNA-ADT](tutorials/tutorial_human_lymph_node_RNA_ADT.ipynb).
 - [E13/E15/E18](tutorials/tutorial_E13E15E18_multi_slice.ipynb) and [P21/P22](tutorials/tutorial_P21P22_multi_slice.ipynb): joint multi-section analysis.
 
-Start Jupyter from the cloned repository root. For the full datasets, extract the spaDIVA data package and set its root first:
+For the real-data tutorials, download and extract [spaDIVA_data.zip](https://drive.google.com/file/d/1IHHfcdMjWYp9kEECQvFIJER6IB4r_YaH/view?usp=sharing). Set `SPADIVA_DATA_ROOT` to the extracted `spaDIVA_data` folder containing `datasets/`, then start Jupyter from the cloned repository root:
 
 Linux (Bash):
 
@@ -47,4 +47,6 @@ $env:SPADIVA_DATA_ROOT = "D:\path\to\spaDIVA_data"
 jupyter lab
 ```
 
-The selected directory must contain `datasets/`. These tutorials demonstrate the software workflow; the manuscript's frozen results and external MultiVI/totalVI analyses are available in the [spaDIVA reproducibility repository](https://github.com/juruo222/spaDIVA_reproducibility).
+Alternatively, place the extracted `datasets/` directory at `data/datasets/` inside the repository; tutorials use `data/` when `SPADIVA_DATA_ROOT` is unset.
+
+The manuscript's frozen results and external MultiVI/totalVI analyses are available in the [spaDIVA reproducibility repository](https://github.com/juruo222/spaDIVA_reproducibility).
